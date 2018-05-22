@@ -15,6 +15,11 @@
     </parent>
 
 	<dependencies>
+        <dependency>
+			<groupId>io.zipkin.reporter</groupId>
+			<artifactId>zipkin-reporter</artifactId>
+		</dependency>
+
         <!-- Spring Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -44,9 +49,19 @@
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
         <dependency>
+            <groupId>wdongyu.org.springframework.cloud</groupId>
+            <artifactId>wdongyu-spring-cloud-sleuth-core</artifactId>
+            <version>1.2.1.RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>
+        <!--dependency>
+            <groupId>wdongyu.org.springframework.cloud</groupId>
+            <artifactId>wdongyu-spring-cloud-sleuth-zipkin</artifactId>
+            <version>1.2.1.RELEASE</version>
+        </dependency-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-sleuth-zipkin</artifactId>
